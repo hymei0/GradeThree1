@@ -1,0 +1,88 @@
+
+%{
+#include <stdio.h>
+#include <string.h>
+#include<stdlib.h>
+     int line_num=1;
+char  Text[10000]="";
+#pragma warning(disable: 4996)
+/*void Print(int line, char* type, char* text){
+	printf("line%d:(%s, %s)\n", line, type, text);
+}*/
+void Print(int line, const char *type, const char *text){
+	
+	
+                char bch[10];
+                char ach[50]="line";
+              //itoa(line,bch,10);
+                sprintf(bch,"%d",line);       //将line以字符串的形式存入bch中
+//printf("%s",line);
+                char cch[20]=":";
+                char dch[20]="(";
+                char ech[20]=", ";
+                char fch[20]=")\n";
+               strcat(strcat(strcat(ach,bch),cch),strcat(strcat(strcat(strcat(dch,type),ech),text),fch));
+               //strcat(strcat(ach,strcat(bch,cch)),strcat(dch,strcat(type,strcat(ech,strcat(text,fch)))));
+        
+	//sprintf(str, "line%d:(%s, %s)\n", line, type, text);
+	//char temp []= Text;
+ 
+
+	//Text = (char *) malloc(strlen(temp) + strlen(ach) + 1);
+                strcat(Text,ach);
+                //printf("%s",Text);
+	//sprintf(res, "%s%s", tmp, str);
+
+	/*if(strlen(temp) > 0)
+		free(temp);*/
+}
+%}
+
+DIGIT [0-9]
+LETTER [a-zA-Z]
+TYPE ("int"|"double"|"char"|"short"|"void")
+KEYWORD ("main"|"if"|"else"|"return"|"while"|"switch"|"case"|"do"|"for"|"scanf"|"printf"|"sqrt"|"abs"|"float")
+BRACKET ("("|")"|";"|","|"{"|"}"|"["|"]"|"\"")
+OPT ("="|"<="|">="|"+="|"-="|"/="|"*="|"+"|"-"|"*"|"/"|"%"|"==")
+INTEGER ("+"|"-")?(0|([1-9])({DIGIT})*)
+DECIMAL  {INTEGER}.{DIGIT}+
+FLOAT {INTEGER}.{DIGIT}+("e"({INTEGER})?)?
+IDENTIFY ({LETTER}|"_")({LETTER}|"_"|{DIGIT})*
+TYPEIDENTIFY ("%"|"&"){IDENTIFY}
+EMPTY "\\s+"
+NOTE ("/"|"*").*
+NEXT ("\n")
+%%
+{NEXT}                                                     line_num++;
+{TYPE}                                                      Print(line_num,"type",yytext);
+{KEYWORD}                                             Print(line_num,"keyword",yytext);
+{BRACKET}                                               Print(line_num,"bracket",yytext);
+{OPT}                                                       Print(line_num,"OPT",yytext);
+{INTEGER}                                                Print(line_num,"integer",yytext);
+{DECIMAL}                                               Print(line_num,"decimal",yytext);
+{FLOAT}                                                   {
+int i=0;
+while(yytext[i]!='e')
+{
+i++;
+}
+if(strlen(yytext)==i+1)
+{printf("Error at Line %d: Illegal floating point number \"%s\".\n",line_num,yytext);return;}
+else
+{Print(line_num,"float",yytext);}
+}
+{IDENTIFY}                                               Print(line_num,"identify",yytext);
+{NOTE}                                                     {};
+{TYPEIDENTIFY}                                       Print(line_num,"typeidentify",yytext);
+%%
+int main(int argc, char **argv)
+{
+  yylex();
+  return 0;
+}
+int yywrap()
+{
+                printf("%s",Text);
+	return 1;
+}
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>实验二</title>
+<link href="file:///D|/各种实验报告/数字媒体/lab5/_css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/lab2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="_image/photoshop.PNG" alt="在此处插入徽标" name="Insert_logo" width="152" height="114" id="Insert_logo" style="display:table-cell;" /></a>
+  <div class="sidebar1"> <p ><a style="float: left; color: rgb(255,0,0); font-weight: bold;" href="about.html">返回菜单页 </a><a style="float:right;color: rgb(255,0,0); font-weight: bold;" href="index.html">返回首页</a></p></div></div>
+    
+  <div class="content">
+    <table width="800" align="center" cellpadding="0" cellspacing="0" hspace="0" vspace="0">
+    <caption class="caption">
+实验二：图像处理 
+    </caption>
+      <tr>
+        <td width="641" align="left" valign="top">一.<strong>实验目的： </strong>
+          <p>(1)学会在图像中选取区域。 <br>
+            (2)学会图像的变换。 <br>
+            (3)掌握蒙板、通道的功能及用法。 <br>
+            (4)学会为图层设置效果层制作立体效果。 <br>
+            (5)学会用滤镜制作特殊效果。 </p>
+          <p>二.<strong>实验内容： </strong></p>
+          <p>(1)建立一个新文件，制作奥运五环标志。 <br>
+            (2)选取作为北京标志的天坛图像素材。 <br>
+            (3)合成图片并制作浮雕效果。 <br>
+            (4)使用滤镜制作艺术字。 <br>
+          (5)合成一枚奥运纪念币。 </p>
+          <p><br>
+            <strong>三、实验步骤</strong>（对照截图具体说明，尽量详细） <br>
+            1.建立一个新文件，制作奥运五环标志 <br>
+            (1)选择&ldquo;开始&rdquo;→&ldquo;程序&rdquo;→Adobe Photoshop，打开Photoshop程序界面。 <br>
+            (2)执行&ldquo;文件&rdquo;→&ldquo;新建&rdquo;命令，建立一个新文件。新文件名为Olympic，高和宽均为10cm，分辨率为72ppi，RGB色彩模式，背景为白色。 <br>
+            (3)执行&ldquo;视图&rdquo;→&ldquo;标尺&rdquo;命令，将鼠标从标尺上拖拽到图像区域，建立参考线，所示。 <br>
+            (4)执行&ldquo;视图&rdquo;→&ldquo;对齐到&rdquo;→&ldquo;参考线&rdquo;命令，从工具箱中选用圆形选区工具，按住Shift+Alt 键在参考线交点处单击并拖拉制作一个圆形选区，如图E2.2所示。 <br>
+            (5)执行&ldquo;选择&rdquo;→&ldquo;存储选区&rdquo;命令，将选区存储为Alpha 1通道，如图E2.3所示。 <br>
+            (6)按Ctrl+D键或执行&ldquo;选择&rdquo;→&ldquo;取消选区&rdquo;命令取消选区浮动。 <br>
+            (7)重复步骤4、步骤5，建立一个稍大些的圆形选区并存储为AIpha 2通道。 <br>
+            (8)保持大的圆选区浮动，执行&ldquo;选择&rdquo;→&ldquo;载入选区&rdquo;命令，设置为将Alpha l通道从选区中减去(如图E2.4所示)，然后单击&ldquo;好&rdquo;按钮形成一个圆环状选区。 <br>
+            (9)存储圆环状选区为Alpha 3通道。 <br>
+          (10)执行&ldquo;窗口&rdquo;→&ldquo;通道&rdquo;命令，打开通道控制面板，可查看通过以上步骤建立的三个选区通道. </p>
+          <p>    (11)执行&ldquo;视图&rdquo;→&ldquo;标尺&rdquo;命令去掉前面的勾号和&ldquo;视图&rdquo;→&ldquo;清除参考线&rdquo;命令，隐藏标尺和清除参考线。 <br>
+            (12)在图层控制面板中，单击下部的&ldquo;建立新图层&rdquo;图标，建立图层1。 <br>
+            设置工具箱中的色彩控制图标的前景色为黑色，执行&ldquo;编辑&rdquo;→&ldquo;填充&rdquo;命令，使用&ldquo;前景色&rdquo;，在图层1中建立一个黑色圆环。<br>
+            (13)用选区工具拖移圆环选区或多次按压键盘上的向左光标键，使圆环选区向左侧移动.<br>
+            (14)在图层控制面板中新建图层2，单击前景色图标，选择RGB色彩，并设置R、G、B分别为0、255、255，为圆环填充蓝色，如图E2.8所示。 <br>
+            (15)同理建立图层3、图层4、图层5，分别生成红色、黄色、绿色圆环，如图E2.9所示。红黄绿色的RGB值分别为255、0、O，255、255、O，0、255、0。 <br>
+            <img src="clip_image002.jpg" alt="1" width="613" height="331"> <br>
+            (16)执行&ldquo;选择&rdquo;→&ldquo;取消选区&rdquo;命令或按Ctrl+D键，取消选区浮动。 <br>
+            提示：由于奥运五环为互相圈套，因此必须对上述生成的图像进行修改。 <br>
+            (17)在控制面板中选中图层1，如图E2.10所示，按住ctrl选择图层2、图层3，执行&ldquo;合并链接图层&rdquo;命令（此处有多种方法合并图层），使图层1、2、3合并为图层1；选中图层4，链接图层5，执行&ldquo;合并链接图层&rdquo;命令，使图层4、5合并为图层4。 <br>
+            (18)选择图层4，单击图层控制面板下部的&ldquo;添加蒙板&rdquo;图标，为图层4建立白色蒙板。 <br>
+            (19)设置前景色为黑色，选用画笔工具（毛笔），在图像中圆环相交的地方根据需要进行涂抹，生成互相嵌套的奥运五环标志，如图E2.10所示。（<strong>说明：一定要点击蒙版后再进行涂抹</strong>） <br>
+            (20)执行&ldquo;向下合并图层&rdquo;命令，使图层1、4合并为图层1，保存该文件。 <br>
+            2.选择天坛图像 <br>
+            (1)执行&ldquo;文件&rdquo;→&ldquo;打开&rdquo;命令，打开天坛图片文件（实验2素材\ tiantan.jpg）。 <br>
+          (2)用磁性套索工具沿建筑物外形移动，制作建筑物选区如图E2.11所示。如对制作的选区不满意，可单击工具栏中最下面的快速蒙板图标，进入快速蒙板状态，用毛笔工具涂抹以修改选区至满意为止，然后再点击快速蒙版退出。 </p>
+          <p>(3)执行&ldquo;编辑&rdquo;→&ldquo;复制&rdquo;命令。 <br>
+            3.合成图片 <br>
+            (1)单击工具箱中的色彩控制图标，设置背景色为蓝色。 <br>
+            (2)执行&ldquo;文件&rdquo;→&ldquo;新建&rdquo;命令，建立一个新文件。新文件名为Currency，高、宽均为10cm，分辨率为72ppi，RGB色彩模式，背景为背景色颜色。 <br>
+            (3)执行&ldquo;编辑&rdquo;→&ldquo;粘贴&rdquo;命令，将天坛建筑物选区图像粘贴到Currency文件中，由于图像太大，执行&ldquo;编辑&rdquo;→&ldquo;变换&rdquo;→&ldquo;缩放&rdquo;命令，将图像缩小至合适大小。注意观察图层控制面板中的粘贴图像占据一个独立的图层1。 <br>
+            (4)在Olympic文件中，选择图层1中五环，如图E2.12所示，使用移动工具拖拽五环选区图像到Currency文件中，占据图层2。执行&ldquo;编辑&rdquo;→&ldquo;变换&rdquo;→&ldquo;缩放&rdquo;命令，将图像缩小。<br>
+            <img src="clip_image004.jpg" alt="2" width="581" height="342"> <br>
+            (6)执行&ldquo;文件&rdquo;→&ldquo;保存&rdquo;命令，保存该合成图像文件。 <br>
+            (7)选择图层1，执行&ldquo;滤镜&rdquo;→&ldquo;风格化&rdquo;→&ldquo;浮雕&rdquo;命令，进行如图E2.14所示的设置，使建筑物产生浮雕效果。 <br>
+            (8)对图层2中的五环执行&ldquo;图层&rdquo;→&ldquo;图层样式&rdquo;→&ldquo;斜面和浮雕&rdquo;命令。 <br>
+            <img src="clip_image006.jpg" alt="3" width="529" height="283"> <br>
+            (9)在图层控制面板中将背景层拖拽到控制面板下部的&ldquo;新增图层&rdquo;上，将背景层复制为&ldquo;背景层副本&rdquo;。 <br>
+            (10)对背景层副本执行&ldquo;滤镜&rdquo;→&ldquo;杂色&rdquo;→&ldquo;添加杂色&rdquo;命令，设置如图E2.16所示。 <br>
+            (11)继续为背景层副本执行&ldquo;滤镜&rdquo;→&ldquo;模糊&rdquo;→&ldquo;高斯模糊&rdquo;命令。 <br>
+            <img src="clip_image008.jpg" alt="4" width="330" height="326"> <br>
+            <br>
+            (12)使用圆形选区工具并按Shift键在背景副本层画一个正圆选区。保持选区浮动，执行&ldquo;选择&rdquo;→&ldquo;反选&rdquo;命令，然后按Delete键删除反选区图像，形成一个圆形图案。 <br>
+            (13)沿圆形图案边缘制作一个环形选区。 <br>
+            (14)执行&ldquo;图层&rdquo;→&ldquo;图层样式&rdquo;命令，应用&ldquo;斜面和浮雕&rdquo;命令对该层制作立体效果。<br>
+            <img src="clip_image010.jpg" alt="5" width="324" height="312"> <br>
+            (15)合并图层1、图层2、背景层副本为一个图层，保存文件。 <br>
+            4.制作立体字 <br>
+            (1)新建文件，取名为&ldquo;Text&rdquo;。 <br>
+            (2)选用文字工具，在图像窗中单击，弹出文字对话框，进行字体、大小等设置并在文字框中写入文字。（将2008修改为2022）2022年北京冬奥会。 <br>
+            (3)执行&ldquo;选择&rdquo;→&ldquo;全选&rdquo;命令，接着执行&ldquo;图层&rdquo;→&ldquo;对齐&rdquo;命令，设置水平居中对齐、垂直居中对齐。 <br>
+            (4)执行&ldquo;图层&rdquo;→&ldquo;栅格化&rdquo;→&ldquo;文字&rdquo;命令，将文字层转化为普通图层。 <br>
+            (5)执行&ldquo;滤镜&rdquo;→&ldquo;扭曲&rdquo;→&ldquo;极坐标&rdquo;命令。 <br>
+            (6)按Alt键将文字图像拖入Currency文件中，调整其位置。 <br>
+            (7)合并图层，保存该文件。合成的奥运纪念币如图E2.21所示。命名为正面.PSD 和 正面.jpg。 <br>
+        <img src="clip_image012.jpg" alt="6" width="310" height="316"></p>
+        <p>四.实验心得：</p>
+        <p style="text-indent:2em;">这次实验还算比较简单，之前利用暑假的时间了解过photoshop，但是关于制作出浮雕效果的功能还没有体验过，一开始按照老师提示的实验步骤来做颜色显示不对，纪念币的那种轮廓的效果也做不出来，后来我就自我发挥了，我新建了图层，添加颜色，在硬币区域内选中一个圆，删除点选中部分就做出了硬币的轮廓，效果感觉还不错，在此实验中感受到photoshop的强大。</p></td>
+      </tr>
+    </table>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>实验效果：</p>
+    <p>
+      <embed src="_image/正面.jpg" width="284" height="256"></embed>
+    </p>
+    <p><a  style="color: rgb(255,0,0); font-weight: bold;" href="_image/正面.jpg">下载图片</a></p>
+    <p>&nbsp;</p>
+    <div style="float:left;background-color: #9999CC;width:820px;height:42px;"> <p ><a style="float:left; text-decoration:none;color: rgb(255,0,0); font-weight: bold;" href="lab1.html"><img src="_image/return2.PNG" width="35" height="35" alt="" longdesc="lab1.html">上一个实验 </a><a style="float:right;color: rgb(255,0,0); font-weight: bold; text-decoration:none;" href="lab3.html"><img src="_image/right2_1.PNG" width="90" height="45" alt="" longdesc="lab3.html">下一个实验    </a></p></div>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

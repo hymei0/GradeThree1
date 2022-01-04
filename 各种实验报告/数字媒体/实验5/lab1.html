@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>实验一</title>
+<link href="_css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/lab1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="_image/cool_eiditor.PNG" alt="在此处插入徽标" name="Insert_logo" width="161" height="122" id="Insert_logo" style="background-color: rgb(0,102,255); display: block; color: rgb(0,102,255);" /></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <h2>实验一</h2>
+    <p style="text-indent:2em;">通过实际操作了解并学会音频的剪辑与多媒体软件cool eiditor pro的使用方法，利用所给的素材文件根据提示步骤完成一有背景音乐的作品。</p>
+    <h3>实验目的</h3>
+    <p>(1)学会通过麦克风录制一段语音信号。 <br>
+      (2)学会通过线性输入录制一段音乐信号作为背景音乐。 <br>
+      (3)学会编辑音频，如剪切、混合粘贴等。 <br>
+    (4)学会制作特殊效果，如增加回声等。 </p>
+    <blockquote>
+      <h3>实验内容</h3>
+    </blockquote>
+    <p>(1)硬件准备。在计算机中要进行音频的录制或播放必须依靠声卡的支持。录制音频信号除需使用声卡外，还要有麦克风或其他音频信号设备(如录放机、CD唱机)；播放音频还需配备音箱。 <br>
+      (2)麦克风录制一段语音。使用Windows操作系统附带的录音机软件或使用Cool Edit 2000录制一段解说词声音。（替代素材中的sound1，录制30秒，个人介绍，第一句说自己名字，我叫XXX........,需要做去噪声处理） <br>
+      (3)用CD唱机录制一段音乐。使用Cool Edit 2000软件从CD唱机录制一段音乐，将作为解说词的配乐。(可以直接用素材中的sound2)<br>
+    (4)使用Cool Edit 2000编辑音频。对解说词音频文件进行<strong>剪辑</strong>，剪掉开头无用的部分；将解说词和音乐文件进行<strong>混音处理</strong>，编辑成一个配乐解说音频文件。（录制的sound1和sound2混音为sound，替代素材中原来的sound）.</p>
+    <h3>实验方法及步骤 </h3>
+    <p><strong>1.</strong><strong>使用CoolEdit  2000编辑soundl wav文件 </strong><br>
+      剪辑录音解说词文件soundl.wav，步骤如下：    </p>
+    <ol>
+      <li>执行File--Open命令.打开soundl.wav文件。 </li>
+    </ol>
+    <p><img src="clip_image002.gif" alt="1" width="559" height="342"><br>
+      (2)观察音频波形，前面有较长一段空白，用鼠标单击并拖拽选定该区域呈高亮显示.如图E1.5所示。 <br>
+      按键盘上的Delete键或执行Edit→Delete  selection命令删除选定区域 <br>
+  <img src="clip_image004.gif" alt="2" width="473" height="294"><br>
+      (4)执行File→Save命令保存该文件。 <br>
+  <strong>2.</strong><strong>使用Cool Edit 2000编辑sound2.wav文件 </strong><br>
+      为音乐文件sound2.wav增加动听的山谷回声效果。 <br>
+      (l)打开sound2.wav文件。 <br>
+  <img src="clip_image006.gif" alt="3" width="498" height="333"><br>
+      (2)执行Effects→Delay  Effects→Echo命令，在弹出的对话框中进行如图El.6所示的设置，然后单击OK按钮。 <br>
+      (3)执行File→Save命令保存文件。 <br>
+  <strong>2.</strong><strong>使用CoolEdit  2000进行混音处理 </strong><br>
+      对soundl文件和sound2文件进行混音，生成配乐诗朗诵音乐。 <br>
+      (1)打开soundl文件。 <br>
+      (2)执行Edit→Mix Paste命令，出现如图El.7所示的对话框。 <br>
+  <img src="clip_image008.gif" alt="4" width="526" height="269"><br>
+      图E1.7<br>
+      (3)在对话框中，设置被粘贴文件的音量Volume L和R为100，在混合方式框中选择Overlap，激活Crossfade选项输入时间为50ms，在被粘贴数据来源框中选择FromFile，单击Select File按钮选择sound2文件，指定Looppaste为1次，单击OK完成按钮。 <br>
+      <img src="clip_image010.gif" alt="5" width="589" height="358"><br>
+      (4)执行File→SaveAs命令，文件名存为sound3，单击OK按钮，完成混音处理。 <br>
+  <strong>*</strong>或者将两段音频放在多音轨中，编辑--&gt;混缩到其他音轨上，然后编辑保存。</p>
+<p style="text-indent:2em;">&nbsp;</p>
+<!-- end .content --></div>
+  <div class="footer">
+    <h3 style="text-align:left;">实验效果</h3>
+    <p style="text-align:left;">
+      <embed src="sound/sound.wav" width="232" height="42" align="BASELINE"></embed>
+    </p>
+    <p style="text-align:left;"><a style="color:rgb(255,0,0);font-size:25px;"  href="sound/sound.wav">下载</a></p>
+    <h3 style="text-align:right;">&nbsp;</h3>
+    <div style="float:left;background-color: #9999CC;width:960px;height:42px;"> <p ><a style="float:left; text-decoration:none;font-size:22px;color: rgb(255,0,0); font-weight: bold;" href="about.html"><img src="_image/return2.PNG" width="35" height="35" alt="" longdesc="about.html">返回菜单页 </a><a style="float:right;font-size:22px;color: rgb(255,0,0); font-weight: bold; text-decoration:none;" href="lab2.html"><img src="_image/right2_1.PNG" width="90" height="45" alt="" longdesc="lab2.html">下一个实验    </a></p></div>
+  <!-- end .footer --></div>
+<!-- end .container --></div>
+</body>
+</html>

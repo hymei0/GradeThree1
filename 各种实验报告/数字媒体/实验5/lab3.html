@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>实验三</title>
+<link href="file:///D|/各种实验报告/数字媒体/lab5/_css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/lab3.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+	color: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="_image/flash.PNG" alt="在此处插入徽标" name="Insert_logo" width="144" height="109" id="Insert_logo" style="display:table-cell;" /></a>
+    <div class="sidebar1"> <p ><a style="float: left; color: rgb(255,0,0); font-weight: bold;" href="about.html">返回菜单页 </a><a style="float:right;color: rgb(255,0,0); font-weight: bold;" href="index.html">返回首页</a></p>
+  
+  </div></div>
+    
+  <div class="content">
+    <table width="800" align="center" cellpadding="0" cellspacing="0" hspace="0" vspace="0">
+    <caption class="caption">
+实验三：动画制作 
+    </caption>
+      <tr>
+        <td align="left" valign="top"><table cellspacing="0" cellpadding="0" hspace="0" vspace="0" align="center">
+          <tr>
+            <td valign="top" align="left"><ul>
+            </ul>
+            <h3>一.实验目的</h3>
+              <p>(1)熟悉工具箱的使用。 <br>
+                (2)掌握各种类型组件的建立。 <br>
+                (3)学会渐变动画的制作。 <br>
+                (4)学会为按钮、电影剪辑设置动作。 </p>
+              <h3>二.实验内容</h3>
+              <p>创建由按钮控制的电影剪辑播放、停止的交互式动画。 </p>
+              <h3><strong>三.实验环境 </strong></h3>
+              <p>Windows10+Flash CS6</p>
+              <p><br>
+                <h3><strong>四、实验步骤</strong></h3>（对照截图具体说明，尽量详细） <br>
+                1.打开Flash CS6，<strong>新建ActionScript 2.0，</strong>设置文件大小为550px×120px，背景为白色。 <br>
+                2.建立内容分别为&ldquo;杭&rdquo;、&ldquo;州&rdquo;、&ldquo;旅&rdquo;、&ldquo;游&rdquo;四个图形组件 <br>
+                (1)创建一个新的Flash文件。 <br>
+                (2)执行Insert(插入)→New Symbol(创建新元件)命令，创建一个名为&ldquo;hang&rdquo;的Graphic(图形)组件。使用文字工具在组件模式中写一个&ldquo;杭&rdquo;字，在字体中设置字体为&ldquo;隶书&rdquo;，大小为&ldquo;32&rdquo;，颜色为设为蓝色。 <br>
+                (3)按照步骤2的方法，创建名为&ldquo;zhou&rdquo;、&ldquo;lV&rdquo;、&ldquo;you&rdquo;的Graphic组件。 <br>
+                (4)单击Scene1(场景1)图标<img src="clip_image002_0000.jpg" alt="1" width="90" height="15">，从组件编辑模式切换到主场景。 <br>
+                3.在场景Scene1(场景1)中制作&ldquo;杭州旅游&rdquo;文字变形动画。 <br>
+                (1)执行Window(窗口)→Library(库)命令打开图库面板，将图形组件&ldquo;hang&rdquo;拖入主场景中。 <br>
+                (2)选中&ldquo;杭&rdquo;字，执行Modify(修改)→Break Apart(分离)命令（通常执行两次）把&ldquo;杭&rdquo;<strong>字图形组件分离</strong>。 <br>
+                (3)单击第20帧，按右键插入关键帧，把第1帧中的&ldquo;杭&rdquo;字拖到场景左边中间。 <br>
+                (4)单击第1帧，选中&ldquo;杭&rdquo;，点击工具箱中的变换工具(任意变形工具)，调整&ldquo;杭&rdquo;字的大小和方向，把变换好的&ldquo;杭&rdquo;字拖到场景之外的区域。 <br>
+                (5)单击第1帧，在第一帧上点右键，选择创建补间动画，则在第1帧至第20帧之间建立了&ldquo;杭&rdquo;字的形状渐变动画。（Enter键可测试动画效果，或者&ldquo;控制&rdquo;中的测试场景） <br>
+                (6)单击新建层图标，插入一个新层zhou，单击第10帧，按右键键插入关键帧，在第10～30帧，依照步骤l～5的方法，创建&ldquo;州&rdquo;字的形状渐变动画。 <br>
+                (7)单击新建层图标，插入一个新层lv，单击第20帧，按右键键插入关键帧，在第20～40帧，依照步骤l～5的方法，创建&ldquo;旅&rdquo;字的形状渐变动画。 <br>
+                (8)单击新建层图标，插入一个新层you，单击第30帧，按右键键插入关键帧，在第30～50帧，依照步骤1～5的方法，创建&ldquo;游&rdquo;字的形状渐变动画。 <br>
+                动画结束后&ldquo;杭州旅游&rdquo;四个字排成一排，为了好看些，也可让四个字的最终效果成为弧形，如图E3.1所示。 <br>
+                <img src="clip_image004.png" alt="2" width="668" height="357"> <br>
+                4.建立风景点图片按钮组件 <br>
+                (1)执行Insert(插入)→New    Symbol(创建新元件)命令，创建名为&ldquo;ydsh&rdquo;的Button(按钮)组件。 <br>
+                (2)在按钮组件编辑模式下，在UP(弹起)状态把一幅雁荡山的风景图片拖入工作区。 <br>
+                (3)鼠标单击Hit(点击)，按右键键插入关键帧.<br>
+                (4)按照步骤l～3创建名为&ldquo;lys&rdquo;的灵隐寺图片Button(按钮)组件，和名为&ldquo;xh&rdquo;的西湖图片Button(按钮)组件。 <br>
+                (5)转换组件编辑模式到主场景。 <br>
+                <img src="clip_image006.png" alt="3" width="668" height="268"> <br>
+                5.制作风景点图片的运动渐变动画 <br>
+                (1)在主场景中，单击新建层图标，插入一个新层ydsh。 <br>
+                (2)在第50帧，按右键插入关键帧。 <br>
+                (3)点击Windows(窗口)→Library(库)，打开库窗口，将我们在(标题4)中制作的风景点图片按钮组件&ldquo;ydsh&rdquo;，拖入主场景中，把按钮组件移动到场景之外，动画开始时，它从场景之外移动到场景中来。 <br>
+                (4)在第70帧，按右键键插入关键帧，把&ldquo;ydsh&rdquo;按钮组件移动到场景之中，并安排好合适的位置。 <br>
+                (5)在第50帧，点右键，选择创建传统补间动画，这样在第50至第70帧之间就建立了&ldquo;ydsh&rdquo;按钮组件从场景之外移入场景之中的运动渐变动画。 <br>
+                (6)在第80帧，按右键键插入关键帧 <br>
+                (7)在第100帧，按右键键插入关键帧，并把&ldquo;ydsh&rdquo;按钮组件移动到场景以外。 <br>
+                (8)在第80帧，点右键，选择创建传统补间动画，，这样在第80至第100帧之间就建立了&ldquo;ydsh&rdquo;按钮组件从场景之中移入场景之外的运动渐变动画。 <br>
+                <img src="clip_image008_0000.jpg" alt="4" width="668" height="376"> <br>
+                到此，我们就在第50至第100帧之间建立了&ldquo;ydsh&rdquo;按钮组件的运动渐变动画，开始时按钮组件从场景之外移入场景之中，在场景中停留一下后，又从场景之中移出场景之外。 <br>
+                (9)单击新建层图标，插入新层lys和xh，按照步骤1～8的方法，建立&ldquo;lys&rdquo;和&ldquo;xh&rdquo;两个风景点按钮组件的运动渐变动画。可以根据自己的要求，设置图片移出移入的方向和停留在场景中的位置。 <br>
+                (10)单击第100帧，右击，在动作面板中&ldquo;全局函数&rdquo;中的&ldquo;时间轴控制&rdquo;，双击&ldquo;gotoandplay()&rdquo;，在&ldquo;gotoandplay(帧)&rdquo;<strong>中把&ldquo;帧&rdquo;改为&ldquo;50&rdquo;。（目的是：从50帧重复播放50到100帧）</strong> <br>
+                <img src="clip_image010.png" alt="5" width="669" height="329"> <br>
+                <img src="clip_image012.png" alt="6" width="668" height="319"> <br>
+                6.创建电影剪辑组件&ldquo;text&rdquo;，并把其安放在场景中 <br>
+                (1)执行Insert（插入）→New    Symbol（创建新图元）命令，创建名为&ldquo;text&rdquo;的&ldquo;Movie    clip&rdquo;（影片剪辑）组件。 <br>
+                (2)按右键键插入3个关键帧。 <br>
+                (3)在动作面板中找到在动作面板中&ldquo;全局函数&rdquo;中的&ldquo;时间轴控制&rdquo;的&ldquo;stop&rdquo;，双击此项，<strong>把4个关键帧的动作都设置为停止（包括第一帧，共4个）</strong>。 <br>
+                (4)第1帧设为空白，在第2、3、4帧分别写上三张风景点图片中所示风景点的名称——&ldquo;雁荡山&rdquo;、&ldquo;灵隐寺&rdquo;、&ldquo;西湖&rdquo;。 <br>
+                (5)转换组件编辑模式到主场景，单击新建层图标，插入一个新层text。 <br>
+                (6)点击Windows（窗口）→Library（库），打开库窗口，将刚才制作的电影剪辑按钮组件&ldquo;text&rdquo;拖入主场景中，并安排好合适位置，这里将其放在&ldquo;杭州旅游&rsquo;，四字的下面。 <br>
+                (7)<strong>点击</strong>&ldquo;text&rdquo;影片剪辑按钮，在右侧的Properties（属性）面板中为电影剪辑组件取名为&ldquo;text&rdquo;。 </p>
+              <p>    7.设置按钮实例的动作，当鼠标点击风景点画面的时候，风景点图片动画停止运动，并在场景中显示风景点的名称。 <br>
+                (1)选中第5层，在第50帧，单击&ldquo;ydsh&rdquo;图片按钮，并右击-&gt;动作。 <br>
+                (2)在动作面板列表中找到全局中的影片剪辑控制中的on，双击此项，然后在右侧Event中选择Roll Over。 <br>
+                (3)在动作面板左侧列表中找到时间轴控制中的&ldquo;stop&rdquo;，双击此项，使鼠标滑过或者点击&ldquo;ydsh&rdquo;图片按钮的时候，图片按钮停止运动。 <br>
+                (4)在动作面板左侧列表中找到否决的动作中的&ldquo;Telltarget&rdquo;，双击此项，然后在右侧&ldquo;Target&rdquo;中填写<strong>&ldquo;/text&rdquo;</strong>。<strong>（双引号不要丢掉，而其是英文下的双引号）</strong> <br>
+                (5)在动作面板左侧列表中找到时间轴控制中的&ldquo;gotoAndstop&rdquo;，双击此项，然后在右侧&ldquo;Frame&rdquo;中填写&ldquo;2&rdquo;。 <br>
+                (6)在动作面板左侧列表中找到全局中的影片剪辑控制中的&ldquo;on&rdquo;，双击此项，然后在右侧&ldquo;Event&rdquo;中选择&ldquo;Roll Out&rdquo;。 <br>
+                (7)在动作面板左侧列表中找到时间轴控制中的&ldquo;play&rdquo;，双击此项，使鼠标滑过或者点击&ldquo;ydsh&rdquo;图片按钮的时候，图片按钮停止运动。 <br>
+                (8)在动作面板左侧列表中找到否决的动作中的&ldquo;Telltarget&rdquo;，双击此项，然后在右侧&ldquo;Target&rdquo;中填写&ldquo;／text&rdquo;。 <br>
+                (9)在动作面板左侧列表中找到时间轴控制中的&ldquo;gotoAndstop&rdquo;，双击此项，然后在右侧&ldquo;Frame&rdquo;中填写&ldquo;1&rdquo;。<strong>（1对应的为空白帧，2,3,4分别对应三张风景的图片） </strong><br>
+                <img src="clip_image014.jpg" alt="7" width="587" height="422">    (10)选中第6层，在第50帧，单击&ldquo;lys&rdquo;图片按钮实例。 <br>
+                (11)按照步骤2～8，设置&ldquo;灵隐寺&rdquo;图片按钮实例。 <br>
+                (12)选中第7层，在第50帧，单击&ldquo;xh&rdquo;图片按钮实例。 <br>
+                (13)按照步骤2～8，设置&ldquo;西湖&rdquo;图片按钮实例。 <br>
+                8.输出电影为.swf格式 <br>
+                执行Fill(文件)→Export Movie(导出电影)命令，在弹出的对话框中命名文件名称，并设置保存类型为<strong>&ldquo;.swf&rdquo;</strong>，保存文件。 <br>
+                放映该电影，观众可参与控制电影的播放。当电影载入时，&ldquo;杭州旅游&rdquo;四个字从四面八方飞入场景之中，然后3幅旅游景点的图片向场景中移动，鼠标单击或者滑过风景点图片时，风景点图片停止运动，并在&ldquo;杭州旅游&rdquo;四字的下方显示出旅游景点的名字。鼠标滑离风景点后，风景点图片动画继续运动。 <br>
+                <img src="clip_image016.jpg" alt="8" width="668" height="358"> <br>
+                <img src="clip_image018.jpg" alt="9" width="668" height="358"> <br>
+                <img src="clip_image020.jpg" alt="11" width="668" height="358"> <br>
+                <strong>五、实验体会 </strong></p></td>
+          </tr>
+        </table>
+    
+<p>这次实验在实验操作过程中有些问题，因为之前没有接触过Falsh的动画制作，对这个实验充满了好奇，但是一切却不尽人意，最后做的动画效果却不佳，雁荡山、西湖和灵隐寺几个却出不来，后来我问了好多同学大家都遇到这个问题，但是不甘心的我在课后把这个实验重复做了好几遍，却也始终出不来这个效果，后来我换了一个版本的Flash来做，一切按照操作步骤做了之后，我最后导出的时候添加的代码报错<img src="clip_image022.jpg" alt="12" width="301" height="13">，百度了一下此问题，原因是我在某一关键帧上加了一段鼠标事件的代码，于是我再添加代码的时候直接双击图片在图片按钮实例上添加鼠标事件代码，问题便迎刃而解了。</p></td>
+      </tr>
+    </table>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>实验效果：</p>
+    <p>
+      <embed src="flash/lab3.swf" width="499" height="156"></embed>
+    </p>
+    <p ><a style="color:rgb(153,0,51);text-decoration: underline;" href="flash/lab3.swf"> 查看</a></p>
+    <p><!-- end .footer --></p>
+    <div style="float:left;background-color: #828E9C;width:820px;height:42px;"> <p ><a style="float:left; text-decoration:none;color: rgb(255,0,0); font-weight: bold;" href="lab2.html"><img src="_image/return.PNG" width="35" height="35" alt="" longdesc="lab3.html">上一个实验 </a><a style="float:right;color: rgb(255,0,0); font-weight: bold; text-decoration:none;" href="lab4.html"><img src="_image/right2.PNG" width="90" height="45" alt="" longdesc="lab5.html">下一个实验    </a></p></div>
+  </div>
+  <!-- end .container --></div>
+</body>
+</html>

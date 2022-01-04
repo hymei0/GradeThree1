@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" rel="stylesheet" content="text/html; charset=utf-8" />
+<link href="../_css/main.css" rel="stylesheet" type="text/css">
+<title>悸动</title>
+<style type="text/css">
+<!--
+body {
+	
+
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-repeat: no-repeat;
+	background-position: center center;
+	overflow: scroll;
+	position: relative;
+	visibility: visible;
+	height: auto;
+	width: 100%;
+}
+
+/* ~~ 元素/标签选择器 ~~ */
+ul, ol, dl { /* 由于浏览器之间的差异，最佳做法是在列表中将填充和边距都设置为零。为了保持一致，您可以在此处指定需要的数值，也可以在列表所包含的列表项（LI、DT 和 DD）中指定需要的数值。请注意，除非编写一个更为具体的选择器，否则您在此处进行的设置将会层叠到 .nav 列表。 */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* 删除上边距可以解决边距会超出其包含的 div 的问题。剩余的下边距可以使 div 与后面的任何元素保持一定距离。 */
+	padding-right: 15px;
+	padding-left: 15px; /* 向 div 内的元素侧边（而不是 div 自身）添加填充可避免使用任何方框模型数学。此外，也可将具有侧边填充的嵌套 div 用作替代方法。 */
+	color: #000;
+}
+a img { /* 此选择器将删除某些浏览器中显示在图像周围的默认蓝色边框（当该图像包含在链接中时） */
+	border: none;
+}
+
+/* ~~ 站点链接的样式必须保持此顺序，包括用于创建悬停效果的选择器组在内。 ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: none; /* 除非将链接设置成极为独特的外观样式，否则最好提供下划线，以便可从视觉上快速识别 */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* 此组选择器将为键盘导航者提供与鼠标使用者相同的悬停体验。 */
+	text-decoration: none;
+	color: #990033;
+	font-weight: bold;
+}
+
+/* ~~ 此固定宽度容器包含其它 div ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* 可能需要最大宽度，以防止此布局在大型显示器上过宽。这将使行长度更便于阅读。IE6 不遵循此声明。 */
+	min-width: 780px;/* 可能需要最小宽度，以防止此布局过窄。这将使侧面列中的行长度更便于阅读。IE6 不遵循此声明。 */
+	background-color: #FFF;
+	margin: 0 auto; /* 侧边的自动值与宽度结合使用，可以将布局居中对齐。如果将 .container 宽度设置为 100%，则不需要此设置。 */
+	background-image: url(../_image/love_background.jpg);
+	height: auto;
+}
+
+
+.header {
+	background-color: #68A1E4;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	width: auto;
+	background-image: none;
+}
+
+
+.sidebar1 {
+	float: top;
+	width: 300px;
+	height: 40xp;
+	background-color: #006699;
+	padding-bottom: 10px;
+}
+.content {
+	with: 1000px;
+	font-family: "华文舒体";
+	font-size: 20px;
+	font-style: normal;
+	line-height: 30px;
+	font-variant: normal;
+	font-weight: lighter;
+	text-transform: none;
+}
+
+/* ~~ 此分组的选择器为 .content 区域中的列表提供了空间 ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* 此填充反映上述标题和段落规则中的右填充。填充放置于下方可用于间隔列表中其它元素，置于左侧可用于创建缩进。您可以根据需要进行调整。 */
+}
+
+/* ~~ 导航列表样式（如果选择使用预先创建的 Spry 等弹出菜单，则可以删除此样式） ~~ */
+ul.nav {
+	list-style: none; /* 这将删除列表标记 */
+	border-top: 1px solid #666; /* 这将为链接创建上边框 – 使用下边框将所有其它项放置在 LI 中 */
+	margin-bottom: 15px; /* 这将在下面内容的导航之间创建间距 */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* 这将创建按钮间隔 */
+}
+ul.nav a, ul.nav a:visited { /* 对这些选择器进行分组可确保链接即使在访问之后也能保持其按钮外观 */
+	padding: 5px 5px 5px 15px;
+	display: block; /* 这将为链接赋予块属性，使其填满包含它的整个 LI。这样，整个区域都可以响应鼠标单击操作。 */
+	width: 160px;  /*此宽度使整个按钮在 IE6 中可单击。如果您不需要支持 IE6，可以删除它。请用侧栏容器的宽度减去此链接的填充来计算正确的宽度。 */
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* 这将更改鼠标和键盘导航的背景和文本颜色 */
+	background-color: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ 脚注 ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #9999CC;
+	position: relative;/* 这可以使 IE6 hasLayout 以正确方式进行清除 */
+	clear: both; /* 此清除属性强制 .container 了解列的结束位置以及包含列的位置 */
+	height: 420px;
+}
+
+/* ~~ 其它浮动/清除类 ~~ */
+.fltrt {  /* 此类可用于在页面中使元素向右浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* 此类可用于在页面中使元素向左浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* 如果从 #container 中删除或移出了 #footer，则可以将此类放置在 <br /> 或空 div 中，作为 #container 内最后一个浮动 div 之后的最终元素 */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.caption {
+	font-weight: bold;
+}
+.caption {
+	font-size: 30px;
+}
+
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+<div class="stars"></div>
+  <h2 class="title" style="color: rgb(255,49,178); font-size:38px; font-weight: bold;top:200px;">世界一般，但我超值！<img src="../_image/猪小屁.jpg" alt="" width="94" class="icon"  style="width: 33px; height: 30px; padding: 5px; border: 2px solid #fff; border-radius: 100%; position: absolute;  top: 150px; animation: downs 2s linear infinite;"></h2>
+    <h3 class="titles" style="color:rgb(255,49,178);top: 300px;font-size:28px;">愿天下有情人终成眷属~ <img src="../_image/we1.jpg" alt="" width="1200" class="icon"  style="width: 33px; height: 30px; padding: 5px; border: 2px solid #fff; border-radius: 100%; position: absolute;  top: 150px; animation: downs 2s linear infinite;"></h3>
+            <img src="../_image/background_food.jpg" alt="" width="100%" height="544" class="bgc">
+  
+  
+    
+  <div class='ribbon' style="right:170px;">
+                <a href='./index.html'><span>返回首页</span></a>
+                <a href='./服务篇.html'><span>上一页</span></a>
+                <a href='./end.html'><span>彩蛋篇</span></a>      
+
+      </div>
+  
+
+    
+  <div class="content" >
+    <table width="800" align="center" cellpadding="0" cellspacing="0" hspace="0" vspace="0" style=" position:relative;top:30px;">
+    <caption class="caption"  >
+你是人间四月天
+    </caption>
+      <tr>
+        <td align="left" valign="top"><table cellspacing="0" cellpadding="0" hspace="0" vspace="0" align="center">
+          <tr>
+            <td valign="top" align="left" ><div> 
+              <p>我说你是人间的四天<br />
+                <br />
+                笑响点了面风<br />
+                <br />
+                轻灵在春的光艳中交舞着变你是四月天里的云烟<br />
+                <br />
+                黄昏吹着风的软<br />
+                <br />
+                星子在无意中闪.<br />
+                <br />
+                细雨点洒在花前<br />
+                <br />
+                那轻那娉婷<br />
+                <br />
+                你是鲜妍<br />
+                <br />
+                百花的冠冕你戴着<br />
+                <br />
+                你是天真呼<br />
+                <br />
+                你是夜夜的圆<br />
+                <br />
+                雪化后那片鹅黄你像新鲜初放你是柔嫩喜悦<br />
+                <br />
+                水光浮动着你梦期待中的白莲你是一树一树的花开<br />
+                <br />
+                是燕在梁间呢喃</p>
+              <p>你是爱、是暖、是希望</p>
+              <p>你是人间四月天</p>
+              <p><br />
+              </p>
+            </div>
+              <h3>&nbsp;</h3>
+                <div class=""></div></tr>
+        </table></td>
+      </tr>
+    </table>
+    <!-- end .content --></div>
+  <div class="footer">
+  <div class="stars"></div>
+    <h3>
+      <embed src="../_image/爱心.jpg" width="406" height="343"></embed>
+    </h3>
+    <p ><a style="color:rgb(255,0,0);" href="../_image/爱心.jpg"> 下载</a></p>
+    <p ><a style="float:right;color: rgb(255,49,178); font-weight: bold;" href="服务篇.html"><img src="../_image/return2.png" width="54" height="38" alt="" longdesc="服务篇.html">上一页</a></p>
+  </div>
+</div>
+<audio autoplay="autoplay" id="audio" loop>
+        <source src="../video/Queen - Love Of My Life (2011 remastered).mp3" type="audio/MP3">
+               
+  </audio>
+        <img src="../_image/we6.jpg" alt="" width="732" height="732" class="music_img">
+</body>
+</html>
